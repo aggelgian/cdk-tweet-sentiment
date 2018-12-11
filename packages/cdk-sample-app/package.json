@@ -1,0 +1,22 @@
+{
+  "name": "cdk-sample-app",
+  "version": "1.0.0",
+  "private": true,
+  "bin": {
+    "cdk-sample-app": "bin/cdk-sample-app.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@types/node": "^8.9.4",
+    "typescript": "^3.1.2",
+    "aws-cdk": "^0.19.0"
+  },
+  "dependencies": {
+    "@aws-cdk/cdk": "^0.19.0",
+    "cdk-tweet-sentiment": "^1.0.0"
+  }
+}

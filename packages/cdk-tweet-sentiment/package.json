@@ -1,0 +1,51 @@
+{
+  "name": "cdk-tweet-sentiment",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:aggelgian/cdk-tweet-sentiment.git"
+  },
+  "author": {
+    "name": "Aggelos Giantsios",
+    "email": "aggelgian@gmail.com"
+  },
+  "scripts": {
+    "build": "tsc && /bin/bash ./build.sh",
+    "watch": "tsc -w",
+    "test": "nodeunit test/test.*.js"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.12",
+    "@types/nodeunit": "^0.0.30",
+    "cdk-tweet-sentiment-aggregator": "^1.0.0",
+    "cdk-tweet-sentiment-processor": "^1.0.0",
+    "cdk-tweet-sentiment-producer": "^1.0.0",
+    "nodeunit": "^0.11.2",
+    "typescript": "^3.1.2"
+  },
+  "peerDependencies": {
+    "@aws-cdk/cdk": "^0.19.0"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-dynamodb": "^0.19.0",
+    "@aws-cdk/aws-elasticsearch": "^0.19.0",
+    "@aws-cdk/aws-events": "^0.19.0",
+    "@aws-cdk/aws-iam": "^0.19.0",
+    "@aws-cdk/aws-kinesisfirehose": "^0.19.0",
+    "@aws-cdk/aws-lambda": "^0.19.0",
+    "@aws-cdk/aws-lambda-event-sources": "^0.19.0",
+    "@aws-cdk/aws-logs": "^0.19.0",
+    "@aws-cdk/aws-s3": "^0.19.0",
+    "@aws-cdk/aws-sns": "^0.19.0",
+    "@aws-cdk/aws-sqs": "^0.19.0",
+    "@aws-cdk/cdk": "^0.19.0"
+  },
+  "keywords": [
+    "aws-cdk",
+    "twitter",
+    "sentiment"
+  ]
+}

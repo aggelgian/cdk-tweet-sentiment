@@ -1,0 +1,24 @@
+{
+  "name": "cdk-tweet-sentiment-producer",
+  "version": "1.0.0",
+  "description": "A lambda function that searches for tweets",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "invoke": "sam local invoke -t template.yaml -v . -n env.json CDKTweetSentimentProducer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:aggelgian/cdk-tweet-sentiment.git"
+  },
+  "author": "Aggelos Giantsios <aggelgian@gmail.com>",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/aggelgian/cdk-tweet-sentiment#readme",
+  "dependencies": {
+    "aws-sdk": "^2.373.0",
+    "twitter": "^1.7.1"
+  },
+  "bundledDependencies": [
+    "twitter"
+  ]
+}

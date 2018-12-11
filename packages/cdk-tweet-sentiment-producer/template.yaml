@@ -1,0 +1,23 @@
+AWSTemplateFormatVersion : 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+Description: The cdk-tweet-sentiment-producer lambda.
+
+Resources:
+
+  CDKTweetSentimentProducer:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs8.10
+      Timeout: 300
+      Environment:
+        Variables:
+          BATCH_SIZE:
+          CHECKPOINTS_TABLE:
+          CHECKPOINTS_TABLE_KEY:
+          FAUCET_NAME:
+          MAX_TWEETS:
+          TWITTER_TERMS:
+          TWITTER_BEARER_TOKEN:
+          TWITTER_CONSUMER_KEY:
+          TWITTER_CONSUMER_SECRET:

@@ -1,0 +1,16 @@
+AWSTemplateFormatVersion : 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+Description: The cdk-tweet-sentiment-aggregator lambda.
+
+Resources:
+
+  CDKTweetSentimentAggregator:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs8.10
+      Timeout: 300
+      Environment:
+        Variables:
+          TOTALS_TABLE:
+          TOTALS_TABLE_KEY:

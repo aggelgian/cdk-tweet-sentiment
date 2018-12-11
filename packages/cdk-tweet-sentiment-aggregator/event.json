@@ -1,0 +1,38 @@
+{
+    "Records": [
+        {
+            "eventVersion": "2.1",
+            "eventSource": "aws:s3",
+            "awsRegion": "us-east-1",
+            "eventTime": "2018-12-11T01:39:34.551Z",
+            "eventName": "ObjectCreated:Put",
+            "userIdentity": {
+                "principalId": "AWS:AROAIBE22DODYQ6MMLMDI:AWSFirehoseToS3"
+            },
+            "requestParameters": {
+                "sourceIPAddress": "18.213.218.19"
+            },
+            "responseElements": {
+                "x-amz-request-id": "FA133635AFA4F18E",
+                "x-amz-id-2": "M4bVB5GJhv2ogIkwmSwzxBlRv1ny22kL5v5Gm+XtzSnuQaHxK3sAh5T8wUamydKgQYIiV/p6cc4="
+            },
+            "s3": {
+                "s3SchemaVersion": "1.0",
+                "configurationId": "NTBlMGJjZTYtZjhhZS00MzBiLWExZWMtNWVhMzMxMjRmYjI1",
+                "bucket": {
+                    "name": "cdk-tweet-twtweetsdaa3e816-268tvn1a80ym",
+                    "ownerIdentity": {
+                        "principalId": "A2J1F05DITW62L"
+                    },
+                    "arn": "arn:aws:s3:::cdk-tweet-twtweetsdaa3e816-268tvn1a80ym"
+                },
+                "object": {
+                    "key": "raw/2018/12/11/01/cdk-tweet-TWDeliveryStreamE5300740-1MGP1ANIOARCL-1-2018-12-11-01-38-14-18668617-45c0-48cd-8796-3f1cb48c0a13",
+                    "size": 1727,
+                    "eTag": "e2025f21925027c94b6be5a336d06b89",
+                    "sequencer": "005C0F15566534A026"
+                }
+            }
+        }
+    ]
+}

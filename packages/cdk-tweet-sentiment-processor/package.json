@@ -1,0 +1,26 @@
+{
+  "name": "cdk-tweet-sentiment-processor",
+  "version": "1.0.0",
+  "description": "A lambda function that processes tweets",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "invoke": "sam local invoke -t template.yaml -v . -n env.json CDKTweetSentimentProcessor"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:aggelgian/cdk-tweet-sentiment.git"
+  },
+  "author": "Aggelos Giantsios <aggelgian@gmail.com>",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/aggelgian/cdk-tweet-sentiment#readme",
+  "dependencies": {
+    "aws-sdk": "^2.373.0",
+    "moment": "^2.22.2",
+    "promise-throttle": "^1.0.0"
+  },
+  "bundleDependencies": [
+    "moment",
+    "promise-throttle"
+  ]
+}
